@@ -20,6 +20,11 @@
       body{
         font-size: 15px;
         font-family: 'League Spartan';
+        background-image: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
+        background-position: top 5rem left 5rem, right 10rem ;
+        text-align: center;
+        /* background-position: right top, left bottom; */
+        background-repeat: no-repeat;
       }
       .attribution {
         font-size: 11px;
@@ -126,8 +131,8 @@
         .box {
           margin: auto;
           width: 24rem;
-          height: 1em;
-          padding-top: 0.75em;
+          height: 0.5em;
+          padding-top: 0.5em;
           padding-bottom: 2em;
           /* padding-left: 7em; */
           background-color: #F7F2F8;
@@ -137,7 +142,12 @@
           line-height: 1.2em;
         }
         .desktop-border {
-          padding: 8rem;
+          margin: 0;
+          position: absolute;
+          top: 50%;
+          left: 50%;
+          -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
         }
         .box-style-2 {
           margin-left: 2rem;
@@ -170,11 +180,11 @@
         .rate-gap {
           padding: 0rem 1.5rem 0.2rem 0.2rem;
         }
+        .posi {}
       } 
     </style>
   </head>
   <body>
-
   <div class="desktop-border">
     <div class="card-flex-desktop des-bor-top">
 
@@ -282,11 +292,11 @@
     </div>
   </div>
 
-  <div class="attribution">
+  <!-- <div class="attribution">
     Challenge by
     <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
       >Frontend Mentor</a
     >. Coded by <a href="#">Me</a>.
-  </div>
+  </div> -->
   </body>
 </html>
